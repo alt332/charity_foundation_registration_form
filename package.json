@@ -1,0 +1,22 @@
+{
+  "name": "charity-register-form",
+  "main": "server.js",
+  "dependencies": {
+    "express": "~4.0.0",
+    "body-parser": "~1.0.0",
+    "mongoose": "3.8.8",
+    "express-validator": "2.1.0",
+    "ejs": "0.8.5",
+    "method-override": "~1.0.0"
+  },
+  "version": "0.0.1",
+  "description": "Just Registration form for Ko Myo's Charity App",
+  "devDependencies": {
+    "morgan": "~1.0.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Thiha Tun (Nex)",
+  "license": "GNU"
+}

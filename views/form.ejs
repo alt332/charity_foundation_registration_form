@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>UCSY 15th Bath Charity Foundation - Membership Registration Form</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Kite+One' rel='stylesheet' type='text/css'>
+  <style type="text/css">
+    body {
+      font-family: 'Kite One', sans-serif;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <form role="form" class="col-md-8 col-md-offset-2" method="POST">
+        <h1>Membership Registration Form</h1>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" name="name">
+        </div>
+        <div class="form-group">
+          <label for="nrc">N.R.C No.</label>
+          <input type="text" class="form-control" name="nrc">
+        </div>
+        <div class="form-group">
+          <kbd>Current Address</kbd>
+          <div class="row">
+            <div class="form-group col-xs-3">
+              <label for="buildingNo">Building No.</label>
+              <input type="text" class="form-control" name="currentAddress[buildingNo]">
+            </div>
+            <div class="form-group col-xs-3">
+              <label for="roomNo">Room No.</label>
+              <input type="text" class="form-control" name="currentAddress[roomNo]">
+            </div>
+            <div class="form-group col-xs-6">
+              <label for="streetRoad">Street / Road</label>
+              <input type="text" class="form-control" name="currentAddress[streetRoad]">
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-xs-6">
+              <label for="township">Township</label>
+              <input type="text" class="form-control" name="currentAddress[township]">
+            </div>
+            <div class="form-group col-xs-3">
+              <label for="state">State</label>
+              <input type="text" class="form-control" name="currentAddress[state]">
+            </div>
+            <div class="form-group col-xs-3">
+              <label for="country">Country</label>
+              <input type="text" class="form-control" name="currentAddress[country]">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="permanentAddress">Permanent Address</label>
+          <input type="text" class="form-control" name="permanentAdderss">
+        </div>
+        <div class="form-group">
+          <label for="contactPhone">Contact Phone No.</label>
+          <input type="text" name="contactPhone" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="contactEmail">Contact E-Mail Address</label>
+          <input type="text" name="contactEmail" class="form-control" />
+        </div>
+        <div class="form-group">
+          <kbd>Educational Preferences</kbd>
+          <div class="row">
+            <div class="form-group col-xs-6">
+              <br />
+              <label for="ucsy">University Of Computer Studies(Yangon)</label>
+            </div>
+            <div class="form-group col-xs-2">
+              <label for="ucsy[major]">Major</label>
+              <input type="text" class="form-control" name="ucsy[major]" />
+            </div>
+            <div class="form-group col-xs-2">
+              <label for="ucsy[batch]">Batch</label>
+              <input type="text" class="form-control" name="ucsy[batch]" />
+            </div>
+            <div class="form-group col-xs-2">
+              <label for="ucsy[year]">Year</label>
+              <input type="text" class="form-control" name="ucsy[year]" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-xs-6">
+              <label for="otherUni">Others</label>
+              <input type="text" name="otherUni[name]" class="form-control" />
+            </div>
+            <div class="form-group col-xs-2">
+              <label for="otherUni[major]">Major</label>
+              <input type="text" class="form-control" name="otherUni[major]" />
+            </div>
+            <div class="form-group col-xs-2">
+              <label for="otherUni[batch]">Batch</label>
+              <input type="text" class="form-control" name="otherUni[batch]" />
+            </div>
+            <div class="form-group col-xs-2">
+              <label for="otherUni[year]">Year</label>
+              <input type="text" class="form-control" name="otherUni[year]" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <kbd>How do you know this Charity Foundation?</kbd>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="1" name="howdoyouknow[website]"> Website
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="1" name="howdoyouknow[facebook]"> Facebook
+            </label>
+          </div>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="1" name="howdoyouknow[wordofmouth]"> Word of Mouth
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="howdoyouknow[others]">Others</label>
+            <input type="text" name="howdoyouknow[others]" class="form-control" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <kbd>Do You Have Any Friend/s in This Charity Foundation?</kbd> <small>(if YES, Please Write Down Their Name/s. If NO, Skip.)</small>
+          <input type="text" name="haveAnyFriends" class="form-control" />
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</body>
+</html>
