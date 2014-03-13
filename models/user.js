@@ -33,7 +33,7 @@ var userSchema = new Schema({
     others: String,
   },
   haveAnyFriends: String,
-  dateOfAcceptance: Number
+  dateOfAcceptance: { type: Number, default: Date.now() }
 });
 
 module.exports = mongoose.model("User", userSchema);
